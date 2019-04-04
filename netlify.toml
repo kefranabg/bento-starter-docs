@@ -1,0 +1,7 @@
+[Settings]
+
+ID = "73eb3785-fa4c-4126-af93-81186285273c"
+
+[build]
+
+    publish = "docs/.vuepress/dist"

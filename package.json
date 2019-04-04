@@ -1,0 +1,23 @@
+{
+  "name": "bento-starter-docs",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "docz": "^0.13.7",
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^0.13.7",
+    "webpack": "^4.28.4"
+  },
+  "scripts": {
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "prettier:format-all": "prettier --write '**/*.{js,md}'",
+    "prettier:check": "prettier '**/*.{js,md}' --list-different",
+    "netlify:deploy": "netlify deploy --prod"
+  },
+  "devDependencies": {
+    "netlify-cli": "^2.9.1",
+    "prettier": "^1.16.4",
+    "vuepress": "^0.14.10"
+  }
+}
