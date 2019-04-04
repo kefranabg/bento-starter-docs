@@ -1,6 +1,6 @@
 module.exports = {
   title: 'bento-starter',
-  description: 'Prepare your PWA faster than your launch !',
+  description: 'Prepare your PWA faster than your lunch !',
   head: [
     ['link', { rel: 'shortcut icon', href: '/assets/img/icons/favicon.ico' }],
     [
