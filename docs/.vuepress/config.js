@@ -1,6 +1,7 @@
 module.exports = {
   title: 'bento-starter',
   description: 'Prepare your PWA faster than your launch !',
+  head: [['link', { rel: 'icon', href: '/assets/img/icons/logo.png' }]],
   themeConfig: {
     logo: '/assets/img/bento-starter.svg',
     nav: [
