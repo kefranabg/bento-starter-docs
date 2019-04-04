@@ -16,8 +16,7 @@ module.exports = {
         children: [
           ['/overview/', 'Overview'],
           ['/guide/', 'Setup'],
-          ['/commands/', 'Commands'],
-          ['/known-issues/', 'Known Issues']
+          ['/commands/', 'Commands']
         ]
       }
     ]
