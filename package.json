@@ -11,8 +11,8 @@
   "scripts": {
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
-    "prettier:format-all": "prettier --write '**/*.{js,md}'",
-    "prettier:check": "prettier '**/*.{js,md}' --list-different",
+    "prettier:format-all": "prettier --write '**/*.{js,md,json}'",
+    "prettier:check": "prettier '**/*.{js,md,json}' --list-different",
     "netlify:deploy": "netlify deploy --prod"
   },
   "devDependencies": {
