@@ -4,17 +4,24 @@ heroImage: /assets/img/bento-starter.svg
 actionText: Get Started →
 actionLink: /guide/
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: MIT Licensed | Copyright © 2018
+  - title: 💚 Vue.js
+    details: BentoStarter uses Vue.js because it is probably the easiest js framework to learn today.  
+  - title: 🏠 Hosting ready
+    details: Deploy your app when a new version of your project is pushed, thanks to Firebase hosting.
+  - title: 🚀 Progressive Web App
+    details: We provide a strong PWA configuration so your web app can be used as a mobile (IOS / Android) or desktop application.
+  - title: ☁️ Cloud database
+    details: We use firestore that provides a cloud NoSQL Database, so you can focus on writing your web app code. 
+  - title: 📁 Well structured
+    details: BentoStarter helps you getting started by prosing a default app structure based on best practices. 
+  - title: ✅ CI / CD
+    details: We provide an optionnal continuous integration/delivery configuration that helps you to control your code quality before deployment.
+  - title: 🙌 Flexible
+    details: As this project is a template and not a CLI, you can modify the whole project according to you needs.
+  - title: 🔎 Prerendering / SEO
+    details: Prerender your different app pages and boost SEO with meta-data description per page.
+  - title: 🛠 Tooling
+    details: BentoStarter use vue-cli as it's the default tooling system for Vue.js.
+  
+footer: MIT Licensed
 ---
