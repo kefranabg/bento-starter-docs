@@ -40,7 +40,9 @@ module.exports = {
     ['meta', { name: 'msapplication-config', content: '/browserconfig.xml' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }]
   ],
-  serviceWorker: true,
+  serviceWorker: {
+    updatePopup: true
+  },
   themeConfig: {
     logo: '/assets/img/bento-starter.svg',
     nav: [
