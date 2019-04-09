@@ -1,16 +1,17 @@
 # Setup
 
 ::: warning Pre-requisites
-* node@9.3.0+
-* npm@5.5.0+
-:::
+
+- node@9.3.0+
+- npm@5.5.0+
+  :::
 
 ::: tip
 We highly recommand to use [VSCode](https://code.visualstudio.com/) with **bento-starter** to get a better development experience
 :::
 
-
 ## Step 1 - Installation
+
 🕙Estimated time → **20 seconds**
 <br />
 
@@ -22,6 +23,7 @@ npm i
 ```
 
 ## Step 2 - Firebase configuration
+
 🕙Estimated time → **3 minutes**
 <br />
 
@@ -54,6 +56,7 @@ npx firebase deploy
 However we recommand you to go through optionnal steps to get a better developer experience :sunglasses:
 
 ## Step 3 (Optionnal) - CircleCI configuration for continuous integration/deployment
+
 🕙Estimated time → **3 minutes**
 <br />
 
@@ -99,6 +102,7 @@ npx firebase login:ci
 Now if you manually trigger a build, the workflow should execute without error :tada:
 
 ## Step 4 (Optionnal) - Enable bundle size status for github pull requests
+
 🕙Estimated time → **10 seconds**
 <br />
 

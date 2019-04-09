@@ -1,6 +1,7 @@
 # Configuration
 
 ## Tooling
+
 <br />
 
 [Vue CLI](https://cli.vuejs.org/) is a full system for rapid Vue.js development.
@@ -8,6 +9,7 @@
 Refer to [the official documentation](https://cli.vuejs.org/) for more details.
 
 ## Prerendering
+
 <br />
 
 **Bento-starter** uses [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) for prerendering.
@@ -21,23 +23,22 @@ new PrerenderSPAPlugin({
   staticDir: path.join(__rootDirname),
   // Required - Routes to prerender.
   routes: prerenderedRoutesList // => prerenderedRoutesList is the array of routes to prerender
-}) 
+})
 ```
 
 If you want to configure the list of routes to prerender, you need to update the `prerenderedRoutesList` variable in `vue-config/config.default.js` :
 
 ```
-const prerenderedRoutesList = ['/login', '/home', '/'] 
+const prerenderedRoutesList = ['/login', '/home', '/']
 ```
 
 Refer to [the official documentation](https://github.com/chrisvfritz/prerender-spa-plugin) for more details.
 
-
 ## PWA / Service worker
+
 <br />
 
 **Bento-starter** uses [vue-cli-plugin-pwa](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) to configure **service worker** and PWA stuff.
-
 
 The **service worker** configuration is available in `public/service-worker.js`.
 
@@ -46,6 +47,7 @@ The **service worker** configuration is available in `public/service-worker.js`.
 Refere to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
 
 ## Cloud database
+
 <br />
 
 **Bento-starter** uses [firestore](https://firebase.google.com/docs/firestore/) to store and sync data.
@@ -60,13 +62,15 @@ You can find find these rules in `src/firebase/firestore.rules`.
 To manually deploy firestore rules, run :
 
 ```
-npx firebase deploy --only rules  
+npx firebase deploy --only rules
 ```
 
 ## User authentication
+
 <br />
 
 ## Data management
+
 <br />
 
 Front-end data management is done with [vuex](https://vuex.vuejs.org/).
@@ -74,6 +78,7 @@ Front-end data management is done with [vuex](https://vuex.vuejs.org/).
 You can find **vuex** related code in `src/store` folder.
 
 ## Hosting
+
 <br />
 
 **Bento-starter** uses [firebase-hosting](https://firebase.google.com/docs/hosting/) for app deployment.
@@ -81,18 +86,19 @@ You can find **vuex** related code in `src/store` folder.
 To manually deploy your app, run :
 
 ```
-npx firebase deploy --only hosting 
+npx firebase deploy --only hosting
 ```
 
 :warning: To deploy, you must have build your app before :
 
 ```
-npm run build 
+npm run build
 ```
 
 Deployment configuration can be found in `/firebase.json`.
 
 ## Continuous integration/deployment
+
 <br />
 
 Continuous integration/deployment is handled by [CircleCI](https://circleci.com/) (**[If you've enabled it](/setup/#step-3-optionnal-circleci-configuration-for-continuous-integration-deployment)**)
@@ -110,6 +116,7 @@ CircleCI will process the following :
 **CircleCI** configuration is available in `.circleci/config.yml`.
 
 ## Tests
+
 <br />
 
 All tests and related configuration can be found in `tests` folder.<br />
@@ -118,21 +125,25 @@ All tests and related configuration can be found in `tests` folder.<br />
 You can easily change these testing frameworks with [vue-cli](https://cli.vuejs.org/) if you want.
 
 ## Bundle size
+
 <br />
 
 Refer to [the official documentation](https://github.com/siddharthkp/bundlesize) for more details.
 
 ## Code format
+
 <br />
 
 **Bento-starter** uses [prettier](https://prettier.io/) to keep you code formatted.
 
 ## Code quality
+
 <br />
 
 **Bento-starter** uses [eslint](https://eslint.org/) to control the quality of your code.
 
 ## Pages meta infos
+
 <br />
 
 Manipulating the meta information of the head tag is done with [vue-head](https://github.com/ktquez/vue-head).
