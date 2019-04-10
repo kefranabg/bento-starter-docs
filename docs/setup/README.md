@@ -54,7 +54,7 @@ npx firebase deploy
 
 However we recommand you to go through optionnal steps to get a better developer experience :sunglasses:
 
-## Step 3 (Optionnal) - CircleCI configuration for continuous integration/deployment
+## Step 3 (Optionnal) - Continuous integration/deployment
 
 🕙Estimated time → **3 minutes**
 <br />
@@ -69,6 +69,8 @@ The process is the following :
 - Build the project : `npm run build`
 - Check your js bundles sizes : `npm run bundlesize`
 - **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** `npm run firebase:deploy`
+
+![CircleCI workflow](/assets/img/ci-workflow.jpg)
 
 **For this step, it is asumed that you already have a github repository for your bento-starter project.**
 
@@ -99,10 +101,3 @@ npx firebase login:ci
 - Copy this token and in your CircleCI project interface, go to => Settings => Environment Variables and click `Add Variable` button. Fot the env variable name, use `FIREBASE_TOKEN` and for the value, use the token you got from the `firebase login:ci` command.
 
 Now if you manually trigger a build, the workflow should execute without error :tada:
-
-## Step 4 (Optionnal) - Enable bundle size status for github pull requests
-
-🕙Estimated time → **10 seconds**
-<br />
-
-To enable bundle size status, follow [these steps](https://github.com/siddharthkp/bundlesize#2-build-status)

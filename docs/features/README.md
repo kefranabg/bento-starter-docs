@@ -8,6 +8,62 @@
 
 Refer to [the official documentation](https://cli.vuejs.org/) for more details.
 
+## Environments
+
+<br />
+
+- ### Configurations files
+
+**Vue-cli** configuration may be different depending on the mode you are running the app. You can find all config files per mode on the `/vue-config` folder. `/vue-config/config.default.js` will be merged with either `/vue-config/config.development.js` or `/vue-config/config.production.js` depending on the mode you are using. For more informations on vue-cli modes, please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes)
+
+- ### Environments variables & Modes
+
+Please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes).
+
+## PWA
+
+<br />
+
+- ### Service worker
+
+**Bento-starter** uses [vue-cli-plugin-pwa](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) to configure **service worker** and PWA stuff.
+
+The **service worker** configuration is available in `public/service-worker.js`.
+
+**Service worker registration** is done from this file `src/misc/register-service-worker.js`.
+
+Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
+
+- ### App new version available
+
+When you release a version of your app, your user will be informed with a toastr that a new version of you app is available so he can refresh :
+
+![New version available](/assets/img/new-version-available.jpg)
+
+This logic is located in `src/misc/register-service-worker.js` in the `updated` hook function.
+
+- ### Manifest
+
+The **web app manifest** is available here `public/manifest.json`.
+Refer to the [google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
+
+- ### Offline
+
+Offline logic is located in `src/misc/handle-network-status.js`.
+
+- ### Add to home screen
+
+If you are using chrome on an android device, the browser will automatically prompt the user to install your PWA.
+<br />
+
+**On safari IOS, this process is not automatic yet**. The user has to manually add the PWA to home screen.
+For a better experience on IOS, **bento-starter** display a modal explaining the process to add the app to home screen.
+This modal is shown only the first time the user visit your app. The app will show this modal again after 1 month (if the PWA is still not installed).
+
+![Add to home screen](/assets/img/add-to-home-screen.jpg)
+
+This logic is located in `src/misc/handle-apple-install-prompt.js`
+
 ## Prerendering
 
 <br />
@@ -34,53 +90,14 @@ const prerenderedRoutesList = ['/login', '/home', '/']
 
 Refer to [the official documentation](https://github.com/chrisvfritz/prerender-spa-plugin) for more details.
 
-## Environments
+## Authentication
 
 <br />
 
-- ### Configurations files
+**Bento-starter** uses [firebase auth](https://firebase.google.com/docs/auth/) to handle user authentication. By default, Google Authentication is the only provider enabled in the **bento-starter** stack. You can easily add other providers like **Twitter** or **Facebook** by going to the [firebase console](https://console.firebase.google.com), on the `Authentication` page.
 
-**Vue-cli** configuration may be different depending on the mode you are running the app. You can find all config files per mode on the `/vue-config` folder. `/vue-config/config.default.js` will be merged with either `/vue-config/config.development.js` or `/vue-config/config.production.js`. For more informations on vue-cli modes, please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes)
-
-- ### Environments variables & Modes
-
-Please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes).
-
-## PWA
-
-<br />
-
-- ### Service worker
-
-**Bento-starter** uses [vue-cli-plugin-pwa](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) to configure **service worker** and PWA stuff.
-
-The **service worker** configuration is available in `public/service-worker.js`.
-
-**Service worker registration** is done from this file `src/misc/register-service-worker.js`.
-
-Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
-
-- ### Manifest
-
-The **web app manifest** is available here `public/manifest.json`.
-Refer to the [google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
-
-- ### Offline
-
-Offline logic is located in `src/misc/handle-network-status.js`.
-
-- ### Add to home screen
-
-If you are using chrome on an android device, the browser will automatically prompt the user to install your PWA.
-<br />
-
-**On safari IOS, this process is not automatic yet**. The user has to manually add the PWA to home screen.
-For a better experience on IOS, **bento-starter** display a modal explaining the process to add the app to home screen.
-This modal is shown only the first time the user visit your app. The app will show this modal again after 1 month (if the PWA is still not installed).
-
-![Lighthouse score](/assets/img/add-to-home-screen.jpg)
-
-This logic is located in `src/misc/handle-apple-install-prompt.js`
+- Login component is located in `src/views/Login.vue`.<br />
+- Authentication logic is located in `src/misc/handle-authentication.js` and in `src/store/authentication` folder.
 
 ## Cloud database
 
@@ -100,15 +117,6 @@ To manually deploy firestore rules, run :
 ```
 npx firebase deploy --only rules
 ```
-
-## Authentication
-
-<br />
-
-**Bento-starter** uses [firebase auth](https://firebase.google.com/docs/auth/) to handle user authentication. By default, Google Authentication is the only provider enabled in the **bento-starter** stack. You can easily add other providers like **Twitter** or **Facebook** by going to the [firebase console](https://console.firebase.google.com), on the `Authentication` page.
-
-- Login component is located in `src/views/Login.vue`.<br />
-- Authentication logic is located in `src/misc/handle-authentication.js` and in `src/store/authentication` folder.
 
 ## Data management
 
@@ -142,7 +150,7 @@ Deployment configuration can be found in `/firebase.json`.
 
 <br />
 
-Continuous integration/deployment is handled by [CircleCI](https://circleci.com/) (**[If you've enabled it](/setup/#step-3-optionnal-circleci-configuration-for-continuous-integration-deployment)**)
+Continuous integration/deployment is handled by [CircleCI](https://circleci.com/) (**[If you've enabled it](/setup/#step-3-optionnal-continuous-integration-deployment)**)
 
 CircleCI will process the following :
 
@@ -153,6 +161,8 @@ CircleCI will process the following :
 - Build the project : `npm run build`
 - Check your js bundles sizes : `npm run bundlesize`
 - **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** `npm run firebase:deploy`
+
+![CircleCI workflow](/assets/img/ci-workflow.jpg)
 
 **CircleCI** configuration is available in `.circleci/config.yml`.
 

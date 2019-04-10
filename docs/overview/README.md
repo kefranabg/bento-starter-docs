@@ -10,7 +10,7 @@ sidebarDepth: 0
 
 **Demo :point_right:** [https://bento-starter.firebaseapp.com](https://bento-starter.firebaseapp.com)
 
-:bento: **bento-starter** is an Open-Source Full-Stack solution that helps you to build fast and maintainable web applications using tools like Vue.js, Firebase, Progressive Web Apps support... The goal of this project is to provide a powerfull and well configured stack so you can focus on writing front end application.
+:bento: **bento-starter** is an Open-Source Full-Stack solution that helps you to build fast and maintainable web applications using tools like Vue.js, Firebase, Progressive Web Apps support... The goal of this project is to provide a powerfull and well configured stack so you can focus on writing your web application very quickly.
 
 **bento-starter** comes with a small example of "products management" in the [products page](https://bento-starter.firebaseapp.com/login?redirectUrl=%2Fproducts)**(Authentication required)** to demonstrate how to manage your data with this stack.
 
