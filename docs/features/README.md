@@ -4,7 +4,7 @@
 
 <br />
 
-[Vue CLI](https://cli.vuejs.org/) is a full system for rapid Vue.js development.
+**Bento-starter** uses [Vue CLI](https://cli.vuejs.org/) which is a full system for rapid Vue.js development.
 
 Refer to [the official documentation](https://cli.vuejs.org/) for more details.
 
@@ -34,9 +34,22 @@ const prerenderedRoutesList = ['/login', '/home', '/']
 
 Refer to [the official documentation](https://github.com/chrisvfritz/prerender-spa-plugin) for more details.
 
-## PWA / Service worker
+## Environments
+<br />
+
+* ### Configurations files
+
+**Vue-cli** configuration may be different depending on the mode you are running the app. You can find all config files per mode on the `/vue-config` folder. `/vue-config/config.default.js` will be merged with either `/vue-config/config.development.js` or `/vue-config/config.production.js`. For more informations on vue-cli modes, please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes)
+
+* ### Environments variables & Modes
+
+Please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes).
+
+## PWA
 
 <br />
+
+* ### Service worker
 
 **Bento-starter** uses [vue-cli-plugin-pwa](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) to configure **service worker** and PWA stuff.
 
@@ -45,6 +58,29 @@ The **service worker** configuration is available in `public/service-worker.js`.
 **Service worker registration** is done from this file `src/misc/register-service-worker.js`.
 
 Refere to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
+
+* ### Manifest
+
+The **web app manifest** is available here `public/manifest.json`.
+Refer to the [google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
+
+* ### Offline
+
+Offline logic is located in `src/misc/handle-network-status.js`.
+
+* ### Add to home screen
+
+If you are using chrome on an android device, the browser will automatically prompt the user to install your PWA.
+<br />
+
+**On safari IOS, this process is not automatic yet**. The user has to manually add the PWA to home screen.
+For a better experience on IOS, **bento-starter** display a modal explaining the process to add the app to home screen.
+This modal is shown only the first time the user visit your app. The app will show this modal again after 1 month (if the PWA is still not installed).
+
+
+![Lighthouse score](/assets/img/add-to-home-screen.jpg)
+
+This logic is located in `src/misc/handle-apple-install-prompt.js`
 
 ## Cloud database
 
@@ -65,9 +101,14 @@ To manually deploy firestore rules, run :
 npx firebase deploy --only rules
 ```
 
-## User authentication
+## Authentication
 
 <br />
+
+**Bento-starter** uses [firebase auth](https://firebase.google.com/docs/auth/) to handle user authentication. By default, Google Authentication is the only provider enabled in the **bento-starter** stack. You can easily add other providers like **Twitter** or **Facebook** by going to the [firebase console](https://console.firebase.google.com), on the `Authentication` page.
+
+* Login component is located in `src/views/Login.vue`.<br />
+* Authentication logic is located in `src/misc/handle-authentication.js` and in `src/store/authentication` folder.
 
 ## Data management
 
@@ -75,7 +116,7 @@ npx firebase deploy --only rules
 
 Front-end data management is done with [vuex](https://vuex.vuejs.org/).
 
-You can find **vuex** related code in `src/store` folder.
+**Vuex** is located in the `src/store` folder.
 
 ## Hosting
 
@@ -127,6 +168,17 @@ You can easily change these testing frameworks with [vue-cli](https://cli.vuejs.
 ## Bundle size
 
 <br />
+
+Bundle size helps you control your javascript bundle sizes for better performances.<br />
+Bundlesize rules are located in the `package.json`, in the `bundlesize` property. You can add as many rules as you want. It is recommanded to add as many rules as javascript bundles you have.
+
+Here is the command to run check your bundles size :
+
+```
+npm run bundlesize
+```
+
+If you did [**step 3** in the setup](/setup/#step-3-optionnal-circleci-configuration-for-continuous-integration-deployment) section, `bundlesize` command will be run during the CI process. 
 
 Refer to [the official documentation](https://github.com/siddharthkp/bundlesize) for more details.
 
