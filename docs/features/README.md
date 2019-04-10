@@ -58,7 +58,7 @@ The **service worker** configuration is available in `public/service-worker.js`.
 
 **Service worker registration** is done from this file `src/misc/register-service-worker.js`.
 
-Refere to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
+Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
 
 - ### Manifest
 
