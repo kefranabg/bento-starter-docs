@@ -9,10 +9,8 @@
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://cli.vuejs.org/) for more details.
+📘 Refer to [the official documentation](https://cli.vuejs.org/) for more details.
 :::
-
-
 
 ## Environments
 
@@ -25,7 +23,7 @@
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes) for more details.
+📘 Refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes) for more details.
 :::
 
 - ### Environments variables & Modes
@@ -33,7 +31,7 @@
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes) for more details.
+📘 Refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes) for more details.
 :::
 
 ## PWA
@@ -51,7 +49,7 @@ The **service worker** configuration is available in `public/service-worker.js`.
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
+📘 Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
 :::
 
 - ### App new version available
@@ -69,7 +67,7 @@ The **web app manifest** is available here `public/manifest.json`.
 <br />
 
 ::: tip
- 📘 Refer to [the google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
+📘 Refer to [the google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
 :::
 
 - ### Offline
@@ -116,7 +114,7 @@ const prerenderedRoutesList = ['/login', '/home', '/']
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://github.com/chrisvfritz/prerender-spa-plugin) for more details.
+📘 Refer to [the official documentation](https://github.com/chrisvfritz/prerender-spa-plugin) for more details.
 :::
 
 ## Authentication
@@ -131,7 +129,7 @@ const prerenderedRoutesList = ['/login', '/home', '/']
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://firebase.google.com/docs/auth/) for more details.
+📘 Refer to [the official documentation](https://firebase.google.com/docs/auth/) for more details.
 :::
 
 ## Cloud database
@@ -156,7 +154,7 @@ npx firebase deploy --only rules
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://firebase.google.com/docs/firestore/) for more details.
+📘 Refer to [the official documentation](https://firebase.google.com/docs/firestore/) for more details.
 :::
 
 ## Data management
@@ -170,7 +168,7 @@ Front-end data management is done with [vuex](https://vuex.vuejs.org/).
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://vuex.vuejs.org/) for more details.
+📘 Refer to [the official documentation](https://vuex.vuejs.org/) for more details.
 :::
 
 ## Hosting
@@ -196,7 +194,7 @@ Deployment configuration can be found in `/firebase.json`.
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://firebase.google.com/docs/hosting/) for more details.
+📘 Refer to [the official documentation](https://firebase.google.com/docs/hosting/) for more details.
 :::
 
 ## Continuous integration/deployment
@@ -222,7 +220,7 @@ CircleCI will process the following :
 <br />
 
 ::: tip
- 📘 Refer to [the CircleCI documentation](https://circleci.com/docs/) for more details.
+📘 Refer to [the CircleCI documentation](https://circleci.com/docs/) for more details.
 :::
 
 ## Tests
@@ -249,7 +247,7 @@ You can easily change these testing frameworks with [vue-cli](https://cli.vuejs.
 <br />
 
 ::: tip
- 📘 Refer to the [Jest documentation](https://jestjs.io/) or [Cypress documentation](https://www.cypress.io/)  for more details.
+📘 Refer to the [Jest documentation](https://jestjs.io/) or [Cypress documentation](https://www.cypress.io/) for more details.
 :::
 
 ## Bundle size
@@ -270,7 +268,7 @@ If you did [**step 3** in the setup](/setup/#step-3-optionnal-continuous-integra
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://github.com/siddharthkp/bundlesize) for more details.
+📘 Refer to [the official documentation](https://github.com/siddharthkp/bundlesize) for more details.
 :::
 
 ## Code format
@@ -294,7 +292,7 @@ npm run prettier:format-all
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://prettier.io/) for more details.
+📘 Refer to [the official documentation](https://prettier.io/) for more details.
 :::
 
 ## Code quality
@@ -312,7 +310,7 @@ npm run lint
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://eslint.org/) for more details.
+📘 Refer to [the official documentation](https://eslint.org/) for more details.
 :::
 
 ## Pages meta infos
@@ -324,5 +322,5 @@ Manipulating the meta information of the head tag is done with [vue-head](https:
 <br />
 
 ::: tip
- 📘 Refer to [the official documentation](https://github.com/ktquez/vue-head) for more details.
+📘 Refer to [the official documentation](https://github.com/ktquez/vue-head) for more details.
 :::

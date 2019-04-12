@@ -21,7 +21,7 @@ features:
   - title: 🛠 Flexible
     details: As this project is a template and not a CLI, you can modify the whole project according to you needs.
   - title: 🔎 Prerendering / SEO
-    details: Prerender your different app pages and boost SEO with meta-data description per page. 
+    details: Prerender your different app pages and boost SEO with meta-data description per page.
 
 footer: MIT Licensed
 ---

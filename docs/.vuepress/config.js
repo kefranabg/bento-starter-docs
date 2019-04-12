@@ -1,6 +1,7 @@
 module.exports = {
   title: 'bento-starter',
-  description: 'Open-Source Full-Stack solution. Focus on performance and fast web app development.',
+  description:
+    'Open-Source Full-Stack solution. Focus on performance and fast web app development.',
   head: [
     ['link', { rel: 'shortcut icon', href: '/assets/img/icons/favicon.ico' }],
     [

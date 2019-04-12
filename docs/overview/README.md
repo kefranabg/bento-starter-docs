@@ -27,7 +27,6 @@ As this project is a template project and not a CLI, you have access to the enti
 
 ![Lighthouse score](/assets/img/lighthouse-score-report.jpg)
 
-
 **The stack is made up of :**
 
 - :metal: [Vue.js](https://vuejs.org/) : front-end framework
