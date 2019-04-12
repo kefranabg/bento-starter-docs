@@ -6,9 +6,14 @@ sidebarDepth: 0
 
 [![CircleCI](https://circleci.com/gh/kefranabg/bento-starter/tree/master.svg?style=svg&circle-token=f311e2320782a12321a769faa2ef1d3cdf5e1a10)](https://circleci.com/gh/kefranabg/bento-starter/tree/master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/vuesion/vuesion/graphs/commit-activity)
+[![Dependencies](https://img.shields.io/david/kefranabg/bento-starter.svg)](https://david-dm.org/kefranabg/bento-starter)
+[![DevDependencies](https://img.shields.io/david/dev/kefranabg/bento-starter.svg)](https://david-dm.org/kefranabg/bento-starter?type=dev)
 <br />
 
-:bento: **bento-starter** is an Open-Source Full-Stack solution that helps you to build fast and maintainable web applications using tools like Vue.js, Firebase, Progressive Web Apps support... The goal of this project is to provide a powerfull and well configured stack so you can focus on writing your web application very quickly.
+:bento: **bento-starter** is an Open-Source Full-Stack solution that helps you to build fast and maintainable web applications using tools like Vue.js, Firebase, Progressive Web Apps support... The goal of this project is to provide a powerfull and well configured stack (with CI/CD, hosting...) so you can focus on writing your web application very quickly.
+
+As this project is a template project and not a CLI, you have access to the entire app configuration so you can change it according to your needs.
 
 ## Demo
 
@@ -18,7 +23,10 @@ sidebarDepth: 0
 
 **bento-starter** comes with a small example of "products management" in the [products page](https://bento-starter.firebaseapp.com/login?redirectUrl=%2Fproducts)**(Authentication required)** to demonstrate how to manage your data with this stack.
 
-As this project is a template project and not a CLI, you have access to the entire app configuration so you can change it according to your needs.
+**Lighthouse score :**
+
+![Lighthouse score](/assets/img/lighthouse-score-report.jpg)
+
 
 **The stack is made up of :**
 
@@ -38,9 +46,3 @@ As this project is a template project and not a CLI, you have access to the enti
 - :file_folder: **[Optionnal]** [bundlesize](https://github.com/siddharthkp/bundlesize) : control your javascript bundles sizes
 
 <br />
-
-**Lighthouse score :**
-
-The **bento-starter** stack pay attention to performance and best pratictes :
-
-![Lighthouse score](/assets/img/lighthouse-score-report.jpg)

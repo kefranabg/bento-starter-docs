@@ -1,12 +1,18 @@
-# Features & Configuration
+# Guide
 
 ## Tooling
 
 <br />
 
-**Bento-starter** uses [Vue CLI](https://cli.vuejs.org/) which is a full system for rapid Vue.js development.
+**Bento-starter** uses [Vue CLI](https://cli.vuejs.org/) which is the default standard tooling for Vue.js development.
 
-Refer to [the official documentation](https://cli.vuejs.org/) for more details.
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://cli.vuejs.org/) for more details.
+:::
+
+
 
 ## Environments
 
@@ -14,11 +20,21 @@ Refer to [the official documentation](https://cli.vuejs.org/) for more details.
 
 - ### Configurations files
 
-**Vue-cli** configuration may be different depending on the mode you are running the app. You can find all config files per mode on the `/vue-config` folder. `/vue-config/config.default.js` will be merged with either `/vue-config/config.development.js` or `/vue-config/config.production.js` depending on the mode you are using. For more informations on vue-cli modes, please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes)
+**Vue-cli** configuration may be different depending on the mode you are running the app. You can find all config files per mode on the `/vue-config` folder. `/vue-config/config.default.js` will be merged with either `/vue-config/config.development.js` or `/vue-config/config.production.js` depending on the mode you are using.
+
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes) for more details.
+:::
 
 - ### Environments variables & Modes
 
-Please refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes).
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes) for more details.
+:::
 
 ## PWA
 
@@ -32,7 +48,11 @@ The **service worker** configuration is available in `public/service-worker.js`.
 
 **Service worker registration** is done from this file `src/misc/register-service-worker.js`.
 
-Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
+:::
 
 - ### App new version available
 
@@ -45,7 +65,12 @@ This logic is located in `src/misc/register-service-worker.js` in the `updated` 
 - ### Manifest
 
 The **web app manifest** is available here `public/manifest.json`.
-Refer to the [google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
+
+<br />
+
+::: tip
+ 📘 Refer to [the google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
+:::
 
 - ### Offline
 
@@ -88,7 +113,11 @@ If you want to configure the list of routes to prerender, you need to update the
 const prerenderedRoutesList = ['/login', '/home', '/']
 ```
 
-Refer to [the official documentation](https://github.com/chrisvfritz/prerender-spa-plugin) for more details.
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://github.com/chrisvfritz/prerender-spa-plugin) for more details.
+:::
 
 ## Authentication
 
@@ -98,6 +127,12 @@ Refer to [the official documentation](https://github.com/chrisvfritz/prerender-s
 
 - Login component is located in `src/views/Login.vue`.<br />
 - Authentication logic is located in `src/misc/handle-authentication.js` and in `src/store/authentication` folder.
+
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://firebase.google.com/docs/auth/) for more details.
+:::
 
 ## Cloud database
 
@@ -118,13 +153,25 @@ To manually deploy firestore rules, run :
 npx firebase deploy --only rules
 ```
 
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://firebase.google.com/docs/firestore/) for more details.
+:::
+
 ## Data management
 
 <br />
 
 Front-end data management is done with [vuex](https://vuex.vuejs.org/).
 
-**Vuex** is located in the `src/store` folder.
+**Vuex** code is located in the `src/store` folder.
+
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://vuex.vuejs.org/) for more details.
+:::
 
 ## Hosting
 
@@ -146,6 +193,12 @@ npm run build
 
 Deployment configuration can be found in `/firebase.json`.
 
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://firebase.google.com/docs/hosting/) for more details.
+:::
+
 ## Continuous integration/deployment
 
 <br />
@@ -166,6 +219,12 @@ CircleCI will process the following :
 
 **CircleCI** configuration is available in `.circleci/config.yml`.
 
+<br />
+
+::: tip
+ 📘 Refer to [the CircleCI documentation](https://circleci.com/docs/) for more details.
+:::
+
 ## Tests
 
 <br />
@@ -173,7 +232,25 @@ CircleCI will process the following :
 All tests and related configuration can be found in `tests` folder.<br />
 [Cypress](https://www.cypress.io/) is use for E2E tests and [Jest](https://jestjs.io/) for unit tests.
 
+**Run E2E tests :**
+
+```
+npm run test:e2e
+```
+
+**Run unit tests :**
+
+```
+npm run test:unit
+```
+
 You can easily change these testing frameworks with [vue-cli](https://cli.vuejs.org/) if you want.
+
+<br />
+
+::: tip
+ 📘 Refer to the [Jest documentation](https://jestjs.io/) or [Cypress documentation](https://www.cypress.io/)  for more details.
+:::
 
 ## Bundle size
 
@@ -182,15 +259,19 @@ You can easily change these testing frameworks with [vue-cli](https://cli.vuejs.
 Bundle size helps you control your javascript bundle sizes for better performances.<br />
 Bundlesize rules are located in the `package.json`, in the `bundlesize` property. You can add as many rules as you want. It is recommanded to add as many rules as javascript bundles you have.
 
-Here is the command to run check your bundles size :
+**Run bundle size check command :**
 
 ```
 npm run bundlesize
 ```
 
-If you did [**step 3** in the setup](/setup/#step-3-optionnal-circleci-configuration-for-continuous-integration-deployment) section, `bundlesize` command will be run during the CI process.
+If you did [**step 3** in the setup](/setup/#step-3-optionnal-continuous-integration-deployment) section, `bundlesize` command will be run during the CI process.
 
-Refer to [the official documentation](https://github.com/siddharthkp/bundlesize) for more details.
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://github.com/siddharthkp/bundlesize) for more details.
+:::
 
 ## Code format
 
@@ -198,14 +279,50 @@ Refer to [the official documentation](https://github.com/siddharthkp/bundlesize)
 
 **Bento-starter** uses [prettier](https://prettier.io/) to keep you code formatted.
 
+**Check all files code format command :**
+
+```
+npm run prettier:check
+```
+
+**Fix all files code format command :**
+
+```
+npm run prettier:format-all
+```
+
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://prettier.io/) for more details.
+:::
+
 ## Code quality
 
 <br />
 
 **Bento-starter** uses [eslint](https://eslint.org/) to control the quality of your code.
 
+**Run linter command :**
+
+```
+npm run lint
+```
+
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://eslint.org/) for more details.
+:::
+
 ## Pages meta infos
 
 <br />
 
 Manipulating the meta information of the head tag is done with [vue-head](https://github.com/ktquez/vue-head).
+
+<br />
+
+::: tip
+ 📘 Refer to [the official documentation](https://github.com/ktquez/vue-head) for more details.
+:::
