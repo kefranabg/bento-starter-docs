@@ -68,7 +68,7 @@ The process is the following :
 - Run e2e tests : `npm run test:e2e:headless`
 - Build the project : `npm run build`
 - Check your js bundles sizes : `npm run bundlesize`
-- **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** `npm run firebase:deploy`
+- **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** : `npm run firebase:deploy:ci`
 
 ![CircleCI workflow](/assets/img/ci-workflow.jpg)
 
@@ -84,7 +84,7 @@ Steps :
 - Choose `Linux` for operating system and `Node` for the language
 - You can directly start your first CircleCI build by clicking `Start building` button.
 
-Now your build will fail and this is normal :sweat_smile: It's because of the deployment step (`npm run firebase:deploy`). We need to authorize circle ci to deploy on our firebase hosting project. For this we just need to add a firebase token to circle ci :
+Now your build will fail and this is normal :sweat_smile: It's because of the deployment step (`npm run firebase:deploy:ci`). We need to authorize circle ci to deploy on our firebase hosting project. For this we just need to add a firebase token to circle ci :
 
 - Back to a terminal run the following command :
 

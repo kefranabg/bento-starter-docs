@@ -160,7 +160,7 @@ CircleCI will process the following :
 - Run e2e tests : `npm run test:e2e:headless`
 - Build the project : `npm run build`
 - Check your js bundles sizes : `npm run bundlesize`
-- **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** `npm run firebase:deploy`
+- **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** : `npm run firebase:deploy:ci`
 
 ![CircleCI workflow](/assets/img/ci-workflow.jpg)
 

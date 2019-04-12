@@ -44,7 +44,8 @@ module.exports = {
     logo: '/assets/img/bento-starter.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/overview/' },
+      { text: 'Getting started', link: '/overview/' },
+      { text: 'Demo', link: 'https://bento-starter.firebaseapp.com' },
       { text: 'GitHub', link: 'https://github.com/kefranabg/bento-starter' }
     ],
     sidebar: [
@@ -52,9 +53,9 @@ module.exports = {
         title: 'Guide',
         collapsable: false,
         children: [
-          ['/overview/', 'Overview'],
+          ['/overview/', 'Getting started'],
           ['/setup/', 'Setup'],
-          ['/features/', 'Features & Configuration'],
+          ['/guide/', 'Guide'],
           ['/commands/', 'Commands']
         ]
       }
