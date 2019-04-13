@@ -30,7 +30,7 @@ npm i
 
 ## Step 2 - Firebase configuration
 
-🕙Estimated time → **5 minutes**
+🕙Estimated time → **3 minutes**
 <br />
 
 - Create a new firebase project with the [firebase console](https://console.firebase.google.com)
@@ -78,19 +78,20 @@ The process is the following :
 
 ![CircleCI workflow](/assets/img/ci-workflow.jpg)
 
-**For this step, it is asumed that you already have a github repository for your bento-starter project.**
+⚠️ **For this step, we assume that you already have a github repository that hosts your bento-starter project with your source code pushed on the master branch** ⚠️
 
 Steps :
 
 - Go to [https://circleci.com](https://circleci.com)
 - Login with your github account
 - Authorize CircleCI to look into your github projects
-- Add a new project
-- Select your github repository you are using to host bento-starter project
+- Go to `Side menu → Add projects` and click the `Set Up Project` button corresponding to your **bento-starter** project
 - Choose `Linux` for operating system and `Node` for the language
 - You can directly start your first CircleCI build by clicking `Start building` button.
+- Go to `Side menu → Jobs` and you should see your first CircleCI job running
+- Now wait for all the jobs to finish
 
-Now your build will fail and this is normal :sweat_smile: It's because of the deployment step (`npm run firebase:deploy:ci`). We need to authorize circle ci to deploy on our firebase hosting project. For this we just need to add a firebase token to circle ci :
+Your last build (`deploy`) will fail and this is normal :sweat_smile: It's because of the deployment step (`npm run firebase:deploy:ci`). We need to authorize circle ci to deploy on our firebase hosting project. For this we just need to add a firebase token to circle ci :
 
 - Back to a terminal run the following command :
 
@@ -104,6 +105,8 @@ npx firebase login:ci
 1/PXcLCJ5BXAZ7ciFwkrrpikUbnMAMX8xRFmt16pLYudg9
 ```
 
-- Copy this token and in your CircleCI project interface, go to => Settings => Environment Variables and click `Add Variable` button. Fot the env variable name, use `FIREBASE_TOKEN` and for the value, use the token you got from the `firebase login:ci` command.
-
-Now if you manually trigger a build, the workflow should execute without error :tada:
+- Copy this token and in your CircleCI project interface, go to `Your CircleCI project settings → Environment Variables` and click `Add Variable` button.
+- For the env variable name, use `FIREBASE_TOKEN` and for the value, use the token you got from the `firebase login:ci` command.
+- Go to `Side menu → Jobs` click the job that fails and click the `Rerun workflow` button.
+- Wait again for all the jobs to finish.
+- Now the deploy step has completed with success and your project has automatically been deployed to firebase hosting :tada:
