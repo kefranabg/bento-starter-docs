@@ -7,7 +7,13 @@
   :::
 
 ::: tip
-We highly recommand to use [VSCode](https://code.visualstudio.com/) with **bento-starter** to get a better development experience
+We highly recommand to use [VSCode](https://code.visualstudio.com/) with the following plugins to get a better development experience :
+
+- Prettier
+- Eslint
+- Vetur
+
+**bento-starter** comes with a default code editor config that will automatically be used by vscode. This config is available in `.vscode/settings.json`.
 :::
 
 ## Step 1 - Installation
@@ -24,15 +30,15 @@ npm i
 
 ## Step 2 - Firebase configuration
 
-🕙Estimated time → **3 minutes**
+🕙Estimated time → **5 minutes**
 <br />
 
 - Create a new firebase project with the [firebase console](https://console.firebase.google.com)
-- Create a cloud firestore database
-- Enable Google as a sign-in provider for authentication
-- In your firebase project home page, click `add an application` button then click the web icon project.
-  From here you can copy the config object and replace the config variable in `/src/firebase/init.js` in bento-starter project
-- Back to bento-starter project, open a console and run :
+- Once your firebase project is created, add an application by clicking the web button 👉 ![Firebase web app button](/assets/img/firebase-web-btn.jpg) and copy the config object and replace the config variable in `/src/firebase/init.js` in bento-starter project.
+- Go to `Side menu → Database → Create database` and select `Start in test mode`. Now your firestore database is up.
+- Go to `Side menu → Authentication` click `Set up sign-in method`.
+- Click on Google provider, enable it by clicking the switch button, select a project support email and click `save` button. **You will be able to change or add new auth providers later if you need to.**
+- Back to your bento-starter project, open a console and run :
 
 ```
 npm i -g npx
@@ -50,13 +56,13 @@ npx firebase deploy
 
 **You're done ! :tada:**<br />
 **Your project is now available on firebase hosting**.<br />
-**You can now run `npm run serve` and start your app development !**
+**You can also run `npm run serve` and start your app development !**
 
 However we recommand you to go through optionnal steps to get a better developer experience :sunglasses:
 
 ## Step 3 (Optionnal) - Continuous integration/deployment
 
-🕙Estimated time → **3 minutes**
+🕙Estimated time → **5 minutes**
 <br />
 
 We've built a CircleCI configuration that will trigger the following actions when you're pushing to your github repository.

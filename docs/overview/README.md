@@ -44,4 +44,13 @@ As this project is a template project and not a CLI, you have access to the enti
 - :green_heart: **[Optionnal]** [circleci](https://circleci.com/) : continuous integration/deployment
 - :file_folder: **[Optionnal]** [bundlesize](https://github.com/siddharthkp/bundlesize) : control your javascript bundles sizes
 
+**App embedded features :**
+
+- 👤 Google authentication
+- 📴 Offline support
+- 🆕 New version available prompt on new app deployments
+- ➕ Add to home screen prompt for ios & android
+- ↩️ Smart redirection for auth protected routes
+- ✨ Products page example to demonstrate app data management with firestore and vuex
+
 <br />
