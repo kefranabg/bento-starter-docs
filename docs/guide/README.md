@@ -44,7 +44,7 @@
 
 The **service worker** configuration is available in `public/service-worker.js`.
 
-**Service worker registration** is done from this file `src/misc/register-service-worker.js`.
+**Service worker registration** is done from this file `src/misc/register-service-worker.js`. **By default, service workers are on registered on `production` environment**.
 
 <br />
 
@@ -72,7 +72,7 @@ The **web app manifest** is available here `public/manifest.json`.
 
 - ### Offline
 
-Offline logic is located in `src/misc/handle-network-status.js`.
+Offline management code is located in `src/misc/handle-network-status.js`.
 
 - ### Add to home screen
 
@@ -124,7 +124,7 @@ const prerenderedRoutesList = ['/login', '/home', '/']
 **Bento-starter** uses [firebase auth](https://firebase.google.com/docs/auth/) to handle user authentication. By default, Google Authentication is the only provider enabled in the **bento-starter** stack. You can easily add other providers like **Twitter** or **Facebook** by going to the [firebase console](https://console.firebase.google.com), on the `Authentication` page.
 
 - Login component is located in `src/views/Login.vue`.<br />
-- Authentication logic is located in `src/misc/handle-authentication.js` and in `src/store/authentication` folder.
+- Authentication management code is located in `src/misc/handle-authentication.js` and in `src/store/authentication` folder.
 
 <br />
 
