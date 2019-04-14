@@ -54,4 +54,6 @@ As this project is a template project and not a CLI, you have access to the enti
 - ↩️ Smart redirection for auth protected routes
 - ✨ Products page example to demonstrate app data management with firestore and vuex
 
+* 💪 Better PWA support for all browsers with [PWACompat](https://github.com/GoogleChromeLabs/pwacompat)
+
 <br />

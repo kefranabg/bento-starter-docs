@@ -72,7 +72,10 @@ The **web app manifest** is available here `public/manifest.json`.
 
 - ### Offline
 
-Offline management code is located in `src/misc/handle-network-status.js`.
+With **bento-starter** your app is fully available online.
+The project comes with a cache for static files (handle by the service worker) and a dynamic cache for firestore database requests (firestore offline mode is enabled in `/src/firebase/async-firestore.js`).
+
+Offline status event listener is located in `src/misc/handle-network-status.js`.
 
 - ### Add to home screen
 
