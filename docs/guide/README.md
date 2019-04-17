@@ -253,14 +253,14 @@ You can easily change these testing frameworks with [vue-cli](https://cli.vuejs.
 📘 Refer to the [Jest documentation](https://jestjs.io/) or [Cypress documentation](https://www.cypress.io/) for more details.
 :::
 
-## Bundle size
+## BundleSize
 
 <br />
 
-Bundle size helps you control your javascript bundle sizes for better performances.<br />
-Bundlesize rules are located in the `package.json`, in the `bundlesize` property. You can add as many rules as you want. It is recommanded to add as many rules as javascript bundles you have.
+BundleSize helps you control your javascript bundle sizes for better performances.<br />
+BundleSize rules are located in the `package.json`, in the `bundlesize` property. You can add as many rules as you want. It is recommanded to add as many rules as javascript bundles you have.
 
-**Run bundle size check command :**
+**Run BundleSize check command :**
 
 ```
 npm run bundlesize

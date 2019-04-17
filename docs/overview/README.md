@@ -27,6 +27,10 @@ As this project is a template project and not a CLI, you have access to the enti
 
 ![Lighthouse score](/assets/img/lighthouse-score-report.jpg)
 
+**Optionnal preconfigured CircleCI workflow :**
+
+![CircleCI workflow](/assets/img/ci-workflow.jpg)
+
 **The stack is made up of :**
 
 - :metal: [Vue.js](https://vuejs.org/) : front-end framework
@@ -53,7 +57,6 @@ As this project is a template project and not a CLI, you have access to the enti
 - ➕ Add to home screen prompt for ios & android
 - ↩️ Smart redirection for auth protected routes
 - ✨ Products page example to demonstrate app data management with firestore and vuex
-
-* 💪 Better PWA support for all browsers with [PWACompat](https://github.com/GoogleChromeLabs/pwacompat)
+- 💪 Better PWA support for all browsers with [PWACompat](https://github.com/GoogleChromeLabs/pwacompat)
 
 <br />

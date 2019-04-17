@@ -11,7 +11,7 @@ features:
   - title: 🏠 Hosting ready
     details: Your app is deployed to firebase hosting as soon as you commit a new version.
   - title: 🚀 Progressive Web App
-    details: Provides a strong PWA configuration so your web app can be used as a mobile (IOS / Android) or desktop application.
+    details: Provides a strong PWA configuration so your web app can be used as a mobile (IOS / Android) or desktop application with offline support.
   - title: ☁️ Cloud database
     details: BentoStarter uses firestore that provides a cloud NoSQL Database, so you can focus on writing your front-end code.
   - title: ✅ CI / CD
