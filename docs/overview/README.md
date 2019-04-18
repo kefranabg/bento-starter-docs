@@ -47,7 +47,7 @@ As this project is a template project and not a CLI, you have access to the enti
 - :mag: [Vue head](https://github.com/ktquez/vue-head) : meta description per page
 - :page_facing_up: **[Optionnal]** [prerender spa plugin](https://github.com/chrisvfritz/prerender-spa-plugin) : pages prerendering
 - :green_heart: **[Optionnal]** [circleci](https://circleci.com/) : continuous integration/deployment
-- :file_folder: **[Optionnal]** [bundlesize](https://github.com/siddharthkp/bundlesize) : control your javascript bundles sizes
+- :package: **[Optionnal]** [bundlesize](https://github.com/siddharthkp/bundlesize) : control your javascript bundles sizes
 
 **App embedded features :**
 

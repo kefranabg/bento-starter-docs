@@ -13,7 +13,7 @@ features:
   - title: 🚀 Progressive Web App
     details: Provides a strong PWA configuration so your web app can be used as a mobile (IOS / Android) or desktop application with offline support.
   - title: ☁️ Cloud database
-    details: BentoStarter uses firestore that provides a cloud NoSQL Database, so you can focus on writing your front-end code.
+    details: BentoStarter uses firestore that provides a cloud NoSQL Database so you can focus on writing your front-end code.
   - title: ✅ CI / CD
     details: Optionnal continuous integration/delivery configuration that helps you to control your code quality before deployment.
   - title: 📁 Well structured

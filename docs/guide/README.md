@@ -90,6 +90,10 @@ This modal is shown only the first time the user visit your app. The app will sh
 
 This logic is located in `src/misc/handle-apple-install-prompt.js`
 
+- ### PWACompat
+
+[PWACompat](https://github.com/GoogleChromeLabs/pwacompat) brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps.
+
 ## Prerendering
 
 <br />
