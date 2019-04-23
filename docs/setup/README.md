@@ -91,7 +91,7 @@ Steps :
 - Go to `Side menu → Jobs` and you should see your first CircleCI job running
 - Now wait for all the jobs to finish
 
-Your last build (`deploy`) will fail and this is normal :sweat_smile: It's because of the deployment step (`npm run firebase:deploy:ci`). We need to authorize circle ci to deploy on our firebase hosting project. For this we just need to add a firebase token to circle ci :
+The last job (`deploy`) will fail and this is normal :sweat_smile: It's because of the deployment step (`npm run firebase:deploy:ci`). We need to authorize circle ci to deploy on our firebase hosting project. For this we just need to add a firebase token to circle ci :
 
 - Back to a terminal run the following command :
 
