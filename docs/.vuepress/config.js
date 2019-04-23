@@ -53,7 +53,7 @@ module.exports = {
         title: 'Guide',
         collapsable: false,
         children: [
-          ['/overview/', 'Getting started'],
+          ['/overview/', 'Introduction'],
           ['/setup/', 'Setup'],
           ['/guide/', 'Guide'],
           ['/commands/', 'Commands']
