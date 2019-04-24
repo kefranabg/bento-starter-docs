@@ -208,7 +208,7 @@ Deployment configuration can be found in `/firebase.json`.
 
 <br />
 
-Continuous integration/deployment is handled by [CircleCI](https://circleci.com/) (**[If you've enabled it](/setup/#step-3-optionnal-continuous-integration-deployment)**)
+Continuous integration/deployment is handled by [CircleCI](https://circleci.com/) (**[If you've enabled it](/setup/#step-3-optional-continuous-integration-deployment)**)
 
 CircleCI will process the following :
 
@@ -270,7 +270,7 @@ BundleSize rules are located in the `package.json`, in the `bundlesize` property
 npm run bundlesize
 ```
 
-If you did [**step 3** in the setup](/setup/#step-3-optionnal-continuous-integration-deployment) section, `bundlesize` command will be run during the CI process.
+If you did [**step 3** in the setup](/setup/#step-3-optional-continuous-integration-deployment) section, `bundlesize` command will be run during the CI process.
 
 <br />
 

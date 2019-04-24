@@ -58,9 +58,9 @@ npx firebase deploy
 **Your project is now available on firebase hosting**.<br />
 **You can also run `npm run serve` and start your app development !**
 
-However we recommand you to go through optionnal steps to get a better developer experience :sunglasses:
+However we recommand you to go through optional steps to get a better developer experience :sunglasses:
 
-## Step 3 (Optionnal) - Continuous integration/deployment
+## Step 3 (Optional) - Continuous integration/deployment
 
 🕙Estimated time → **5 minutes**
 <br />

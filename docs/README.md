@@ -15,7 +15,7 @@ features:
   - title: ☁️ Cloud database
     details: BentoStarter uses firestore that provides a cloud NoSQL Database so you can focus on writing your front-end code.
   - title: ✅ CI / CD
-    details: Optionnal continuous integration/delivery configuration that helps you to control your code quality before deployment.
+    details: Optional continuous integration/delivery configuration that helps you to control your code quality before deployment.
   - title: 📁 Well structured
     details: BentoStarter helps you getting started by prosing a default app structure based on best practices.
   - title: 🛠 Flexible

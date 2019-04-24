@@ -27,7 +27,7 @@ As this project is a template project and not a CLI, you have access to the enti
 
 ![Lighthouse score](/assets/img/lighthouse-score-report.jpg)
 
-**Optionnal preconfigured CircleCI workflow :**
+**Optional preconfigured CircleCI workflow :**
 
 ![CircleCI workflow](/assets/img/ci-workflow.jpg)
 
@@ -45,9 +45,9 @@ As this project is a template project and not a CLI, you have access to the enti
 - :white_check_mark: [Jest](https://jestjs.io/) : unit testing
 - :white_check_mark: [Cypress](https://www.cypress.io/) : e2e testing
 - :mag: [Vue head](https://github.com/ktquez/vue-head) : meta description per page
-- :page_facing_up: **[Optionnal]** [prerender spa plugin](https://github.com/chrisvfritz/prerender-spa-plugin) : pages prerendering
-- :green_heart: **[Optionnal]** [circleci](https://circleci.com/) : continuous integration/deployment
-- :package: **[Optionnal]** [bundlesize](https://github.com/siddharthkp/bundlesize) : control your javascript bundles sizes
+- :page_facing_up: **[Optional]** [prerender spa plugin](https://github.com/chrisvfritz/prerender-spa-plugin) : pages prerendering
+- :green_heart: **[Optional]** [circleci](https://circleci.com/) : continuous integration/deployment
+- :package: **[Optional]** [bundlesize](https://github.com/siddharthkp/bundlesize) : control your javascript bundles sizes
 
 **App embedded features :**
 
