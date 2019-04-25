@@ -56,7 +56,8 @@ module.exports = {
           ['/overview/', 'Introduction'],
           ['/setup/', 'Setup'],
           ['/guide/', 'Guide'],
-          ['/commands/', 'Commands']
+          ['/commands/', 'Commands'],
+          ['/faq/', 'FAQ']
         ]
       }
     ]

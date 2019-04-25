@@ -70,6 +70,8 @@ The **web app manifest** is available here `public/manifest.json`.
 📘 Refer to [the google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
 :::
 
+- ### Push
+
 - ### Offline
 
 With **bento-starter** your app is fully available online.
@@ -93,6 +95,10 @@ This logic is located in `src/misc/handle-apple-install-prompt.js`
 - ### PWACompat
 
 [PWACompat](https://github.com/GoogleChromeLabs/pwacompat) brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps.
+
+## Push notifications
+
+You can easily add push notifications to your bento project with [firebase cloud messaging](https://firebase.google.com/docs/cloud-messaging/)
 
 ## Prerendering
 
