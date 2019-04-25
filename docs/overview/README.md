@@ -40,7 +40,7 @@ As this project is a template project and not a CLI, you have access to the enti
 - :house: [Firebase hosting](https://firebase.google.com/products/hosting/) : fast and secure web hosting
 - :bust_in_silhouette: [Firebase authentication](https://firebase.google.com/products/firestore/) : for easy authentication
 - :iphone: [PWA](https://www.npmjs.com/package/@vue/cli-plugin-pwa) : progressive web app support
-- :lipstick: [Prettier](https://prettier.io/) : code formating rules
+- :lipstick: [Prettier](https://prettier.io/) : code formatting rules
 - :rotating_light: [Eslint](https://eslint.org/) : control code quality
 - :white_check_mark: [Jest](https://jestjs.io/) : unit testing
 - :white_check_mark: [Cypress](https://www.cypress.io/) : e2e testing
