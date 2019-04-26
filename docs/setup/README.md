@@ -22,7 +22,7 @@ We highly recommend to use [VSCode](https://code.visualstudio.com/) with the fol
 <br />
 
 ```
-git clone https://github.com/kefranabg/bento-starter.git
+npx degit kefranabg/bento-starter
 cd bento-starter
 cp .env.example .env.local
 npm i
