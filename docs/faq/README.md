@@ -1,3 +1,7 @@
+---
+sidebarDepth: 0
+---
+
 # FAQ
 
 ## What about push notifications ?

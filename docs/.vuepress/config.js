@@ -57,7 +57,10 @@ module.exports = {
           ['/setup/', 'Setup'],
           ['/guide/', 'Guide'],
           ['/commands/', 'Commands'],
-          ['/faq/', 'FAQ']
+          ['/contributing/', 'Contributing'],
+          ['/code-of-conduct/', 'Code of conduct'],
+          ['/faq/', 'FAQ'],
+          ['/license/', 'License']
         ]
       }
     ]
