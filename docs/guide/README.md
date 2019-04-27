@@ -1,3 +1,7 @@
+---
+sidebarDepth: 1
+---
+
 # Guide
 
 ## Tooling
@@ -16,7 +20,7 @@
 
 <br />
 
-- ### Configurations files
+### Configurations files
 
 **Vue-cli** configuration may be different depending on the mode you are running the app. You can find all config files per mode on the `/vue-config` folder. `/vue-config/config.default.js` will be merged with either `/vue-config/config.development.js` or `/vue-config/config.production.js` depending on the mode you are using.
 
@@ -26,7 +30,7 @@
 📘 Refer to [the official documentation](https://cli.vuejs.org/guide/mode-and-env.html#modes) for more details.
 :::
 
-- ### Environments variables & Modes
+### Environments variables & Modes
 
 <br />
 
@@ -38,7 +42,7 @@
 
 <br />
 
-- ### Service worker
+### Service worker
 
 **Bento-starter** uses [vue-cli-plugin-pwa](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) to configure **service worker** and PWA stuff.
 
@@ -52,7 +56,7 @@ The **service worker** configuration is available in `public/service-worker.js`.
 📘 Refer to [the official documentation](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa) for more details.
 :::
 
-- ### App new version available
+### App new version available
 
 When you release a version of your app, your user will be informed with a toastr that a new version of you app is available so he can refresh :
 
@@ -60,7 +64,7 @@ When you release a version of your app, your user will be informed with a toastr
 
 This logic is located in `src/misc/register-service-worker.js` in the `updated` hook function.
 
-- ### Manifest
+### Manifest
 
 The **web app manifest** is available here `public/manifest.json`.
 
@@ -70,14 +74,14 @@ The **web app manifest** is available here `public/manifest.json`.
 📘 Refer to [the google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
 :::
 
-- ### Offline
+### Offline
 
 With **bento-starter** your app is fully available online.
 The project comes with a cache for static files (handle by the service worker) and a dynamic cache for firestore database requests (firestore offline mode is enabled in `/src/firebase/async-firestore.js`).
 
 Offline status event listener is located in `src/misc/handle-network-status.js`.
 
-- ### Add to home screen
+### Add to home screen
 
 If you are using chrome on an android device, the browser will automatically prompt the user to install your PWA.
 <br />
@@ -90,7 +94,7 @@ This modal is shown only the first time the user visit your app. The app will sh
 
 This logic is located in `src/misc/handle-apple-install-prompt.js`
 
-- ### PWACompat
+### PWACompat
 
 [PWACompat](https://github.com/GoogleChromeLabs/pwacompat) brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps.
 
