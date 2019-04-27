@@ -43,7 +43,7 @@ npm i
 ```
 npm i -g npx
 
-# login with the with the account you used to create the firebase project
+# login with the account you used to create the firebase project
 npx firebase login
 
 # select the project you've just created and use "default" as alias

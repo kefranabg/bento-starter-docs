@@ -74,8 +74,6 @@ The **web app manifest** is available here `public/manifest.json`.
 📘 Refer to [the google documentation](https://developers.google.com/web/fundamentals/web-app-manifest/) for more details.
 :::
 
-### Push
-
 ### Offline
 
 With **bento-starter** your app is fully available online.
