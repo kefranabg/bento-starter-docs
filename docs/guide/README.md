@@ -111,7 +111,7 @@ If you don't know what prerendering is, you should read [this](https://github.co
 
 The prerendering configuration is available in `vue-config/config.default.js` :
 
-```
+``` js
 new PrerenderSPAPlugin({
   // Required - The path to the webpack-outputted app to prerender.
   staticDir: path.join(__rootDirname),
@@ -122,7 +122,7 @@ new PrerenderSPAPlugin({
 
 If you want to configure the list of routes to prerender, you need to update the `prerenderedRoutesList` variable in `vue-config/config.default.js` :
 
-```
+``` js
 const prerenderedRoutesList = ['/login', '/home', '/']
 ```
 
@@ -171,6 +171,69 @@ npx firebase deploy --only rules
 ::: tip
 📘 Refer to [the official documentation](https://firebase.google.com/docs/firestore/) for more details.
 :::
+
+### How to add a new firestore collection with bento-starter ?
+
+It's really easy.
+All you have to know is in the [the official documentation](https://firebase.google.com/docs/firestore/).
+
+However here is small example of adding a `news` collection using `GenericDB` in bento-starter :
+
+- First we have to add security rules to allow `news` collection data manipulation. Go to `src/firebase/firestore.rules` and add security rules according to your needs :
+
+```
+// Now connected users will be able to read and create news.
+match /news/{newsId} {
+  allow list: if authenticated();
+  allow create: if authenticated();
+} 
+```
+
+- Upload firestore security rules with the following command :
+
+```
+npx firebase deploy --only firestore:rules 
+```
+
+- Create a `news-db.js` in `src/firebase` folder and past following :
+
+``` js
+import GenericDB from './generic-db'
+
+// [Optional] Extend GenericDB if you want CRUD operations
+export default class NewsDB extends GenericDB {
+  constructor() {
+    super('news')
+  }
+
+  // Here you can extend NewsDB with custom methods
+}
+```
+
+- Now you can use `NewsDb` generic methods from everywhere to manipulate the `news` collection :
+
+``` js
+import NewsDB from '@/firebase/news-db'
+
+const newsDB = new NewsDB()
+
+await newsDB.create({ title: 'My first news', content: 'I like sushi', tag: 'cooking' })
+await newsDB.create({ title: 'My second news', content: 'I dont like sushi', tag: 'cooking'  })
+await newsDB.create({ title: 'My third news', content: 'I like sushi', tag: 'bento'  })
+
+// Read news with some constraints
+const news = await newsDB.readAll([
+  ['content', '==', 'I like sushi'],
+  ['tag', '==', 'cooking']
+])
+
+// news will be :
+// [
+//   { title: 'My first news', content: 'I like sushi', tag: 'cooking' },
+// ]
+```
+
+If you want an example of subcollection creation, take a look at `src/firebase/user-products-db.js` .
 
 ## Data management
 
