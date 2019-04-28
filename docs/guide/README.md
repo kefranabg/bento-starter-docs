@@ -111,7 +111,7 @@ If you don't know what prerendering is, you should read [this](https://github.co
 
 The prerendering configuration is available in `vue-config/config.default.js` :
 
-``` js
+```js
 new PrerenderSPAPlugin({
   // Required - The path to the webpack-outputted app to prerender.
   staticDir: path.join(__rootDirname),
@@ -122,7 +122,7 @@ new PrerenderSPAPlugin({
 
 If you want to configure the list of routes to prerender, you need to update the `prerenderedRoutesList` variable in `vue-config/config.default.js` :
 
-``` js
+```js
 const prerenderedRoutesList = ['/login', '/home', '/']
 ```
 
@@ -186,18 +186,18 @@ However here is small example of adding a `news` collection using `GenericDB` in
 match /news/{newsId} {
   allow list: if authenticated();
   allow create: if authenticated();
-} 
+}
 ```
 
 - Upload firestore security rules with the following command :
 
 ```
-npx firebase deploy --only firestore:rules 
+npx firebase deploy --only firestore:rules
 ```
 
 - Create a `news-db.js` in `src/firebase` folder and past following :
 
-``` js
+```js
 import GenericDB from './generic-db'
 
 // [Optional] Extend GenericDB if you want CRUD operations
@@ -212,14 +212,26 @@ export default class NewsDB extends GenericDB {
 
 - Now you can use `NewsDb` generic methods from everywhere to manipulate the `news` collection :
 
-``` js
+```js
 import NewsDB from '@/firebase/news-db'
 
 const newsDB = new NewsDB()
 
-await newsDB.create({ title: 'My first news', content: 'I like sushi', tag: 'cooking' })
-await newsDB.create({ title: 'My second news', content: 'I dont like sushi', tag: 'cooking'  })
-await newsDB.create({ title: 'My third news', content: 'I like sushi', tag: 'bento'  })
+await newsDB.create({
+  title: 'My first news',
+  content: 'I like sushi',
+  tag: 'cooking'
+})
+await newsDB.create({
+  title: 'My second news',
+  content: 'I dont like sushi',
+  tag: 'cooking'
+})
+await newsDB.create({
+  title: 'My third news',
+  content: 'I like sushi',
+  tag: 'bento'
+})
 
 // Read news with some constraints
 const news = await newsDB.readAll([
