@@ -15,7 +15,13 @@
     "prettier:check": "prettier '**/*.{js,md,json}' --list-different",
     "netlify:deploy": "netlify deploy --prod"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:check"
+    }
+  },
   "devDependencies": {
+    "husky": "^2.1.0",
     "netlify-cli": "^2.9.1",
     "prettier": "^1.16.4",
     "vuepress": "^0.14.10"
