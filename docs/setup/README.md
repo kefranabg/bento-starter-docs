@@ -4,7 +4,12 @@
 
 - node@9.3.0+
 - npm@5.5.0+
-  :::
+
+⚠️**Windows users :**
+
+Bento-starter requires python 2.7 and g++ to properly install.<br/>
+Refer to this issue for [easy setup](https://github.com/kefranabg/bento-starter/issues/125#issuecomment-487036596)
+:::
 
 ::: tip
 We highly recommend to use [VSCode](https://code.visualstudio.com/) with the following plugins to get a better development experience :
