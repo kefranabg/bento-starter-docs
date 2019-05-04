@@ -1,6 +1,7 @@
 module.exports = {
   title: 'bento-starter',
   description: 'Open-Source Full-Stack solution for fast PWA development',
+  ga: 'UA-75044551-3',
   head: [
     ['link', { rel: 'shortcut icon', href: '/assets/img/icons/favicon.ico' }],
     [
