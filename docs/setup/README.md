@@ -2,17 +2,9 @@
 
 ::: warning Pre-requisites
 
-- node version >= 9.3.0 && < 12.0.0
+- node >= 9.3.0 && < 12.0.0
 - npm@5.5.0+
 
-⚠️**Node.js 12 :**
-
-Bento-starter depends on `bundlesize` package which is not compatible with **Node.js 12** yet.
-
-⚠️**Windows users :**
-
-Bento-starter requires python 2.7 and g++ to properly install.<br/>
-Refer to this issue for [easy setup](https://github.com/kefranabg/bento-starter/issues/125#issuecomment-487036596)
 :::
 
 ::: tip
