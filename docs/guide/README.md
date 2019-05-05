@@ -177,7 +177,7 @@ npx firebase deploy --only rules
 It's really easy.
 All you have to know is in the [the official documentation](https://firebase.google.com/docs/firestore/).
 
-However here is small example of adding a `news` collection using `GenericDB` in bento-starter :
+However here is a small example of adding a `news` collection using `GenericDB` in bento-starter :
 
 - First we have to add security rules to allow `news` collection data manipulation. Go to `src/firebase/firestore.rules` and add security rules according to your needs :
 
@@ -353,7 +353,7 @@ BundleSize rules are located in the `package.json`, in the `bundlesize` property
 npm run bundlesize
 ```
 
-If you did [**step 3** in the setup](/setup/#step-3-optional-continuous-integration-deployment) section, `bundlesize` command will be run during the CI process.
+If you did [**step 3** in the setup](/setup/#step-3-optional-continuous-integration-deployment) section, `bundlesize` command will be executed during the CI process.
 
 <br />
 
