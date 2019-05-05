@@ -2,7 +2,7 @@
 
 ::: warning Pre-requisites
 
-- node >= 9.3.0 && < 12.0.0
+- node9.3.0+
 - npm@5.5.0+
 
 :::
