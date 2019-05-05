@@ -2,8 +2,12 @@
 
 ::: warning Pre-requisites
 
-- node@9.3.0+
+- node version >= 9.3.0 && < 12.0.0
 - npm@5.5.0+
+
+⚠️**Node.js 12 :**
+
+Bento-starter depends on `bundlesize` package which is not compatible with **Node.js 12** yet.
 
 ⚠️**Windows users :**
 
