@@ -42,6 +42,12 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#ffffff' }]
   ],
   themeConfig: {
+    repo: 'kefranabg/bento-starter-docs',
+    docsDir: 'docs',
+    docsBranch: 'master',
+    editLinks: true,
+    editLinkText: 'Edit this page on Github',
+    lastUpdated: 'Last Updated',
     logo: '/assets/img/bento-starter.svg',
     nav: [
       { text: 'Home', link: '/' },
