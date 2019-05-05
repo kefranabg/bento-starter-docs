@@ -5,6 +5,8 @@
 - node9.3.0+
 - npm@5.5.0+
 
+We recommand to use the node LTS version
+
 :::
 
 ::: tip
