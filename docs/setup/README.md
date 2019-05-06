@@ -92,7 +92,7 @@ Steps :
 - Login with your github account
 - Authorize CircleCI to look into your github projects
 - Go to `Side menu → Add projects` and click the `Set Up Project` button corresponding to your **bento-starter** project
-- Choose `Linux` for operating system and `Node` for the language
+- You might be asked for choosing an OS and a language. If so, choose `Linux` and `Node`.
 - You can directly start your first CircleCI build by clicking `Start building` button.
 - Go to `Side menu → Jobs` and you should see your first CircleCI job running
 - Now wait for all the jobs to finish
