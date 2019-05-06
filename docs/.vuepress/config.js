@@ -42,7 +42,6 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#ffffff' }]
   ],
   themeConfig: {
-    repo: 'kefranabg/bento-starter-docs',
     docsDir: 'docs',
     docsBranch: 'master',
     editLinks: true,
