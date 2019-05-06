@@ -29,6 +29,9 @@ git clone https://github.com/kefranabg/bento-starter.git
 cd bento-starter
 cp .env.example .env.local
 npm i
+
+# If you want the project to target an existing git remote repository URL :
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 ```
 
 ## Step 2 - Firebase configuration
@@ -46,10 +49,10 @@ npm i
 ```
 npm i -g npx
 
-# login with the account you used to create the firebase project
+# Login with the account you used to create the firebase project
 npx firebase login
 
-# select the project you've just created and use "default" as alias
+# Select the project you've just created and use "default" as alias
 npx firebase use --add
 
 # Build the app and deploy
