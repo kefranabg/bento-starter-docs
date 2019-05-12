@@ -104,6 +104,7 @@ You can publish your PWA in Google Play Store by turning it into a Trusted Web A
 In a nutshell, a TWA is a way to run a web app within an android package. Don't worry, it's really easy to setup :wink:
 
 Some good links explaining in details how to do it :
+
 - [https://www.youtube.com/watch?v=7JDFjeMvxos](https://www.youtube.com/watch?v=7JDFjeMvxos)
 - [https://medium.com/@svenbudak/this-twa-stuff-rocks-finally-i-got-my-pwa-on-google-play-store-b92fe8dae31f](https://medium.com/@svenbudak/this-twa-stuff-rocks-finally-i-got-my-pwa-on-google-play-store-b92fe8dae31f)
 
