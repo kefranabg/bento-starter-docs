@@ -98,6 +98,17 @@ This logic is located in `src/misc/handle-apple-install-prompt.js`
 
 [PWACompat](https://github.com/GoogleChromeLabs/pwacompat) brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps.
 
+## Publish my PWA to Play Store
+
+You can publish your PWA in Google Play Store by turning it into a Trusted Web Activity.
+In a nutshell, a TWA is a way to run a web app within an android package. Don't worry, it's really easy to setup :wink:
+
+Some good links explaining in details how to do it :
+- [https://www.youtube.com/watch?v=7JDFjeMvxos](https://www.youtube.com/watch?v=7JDFjeMvxos)
+- [https://medium.com/@svenbudak/this-twa-stuff-rocks-finally-i-got-my-pwa-on-google-play-store-b92fe8dae31f](https://medium.com/@svenbudak/this-twa-stuff-rocks-finally-i-got-my-pwa-on-google-play-store-b92fe8dae31f)
+
+If you want a concrete example, here is the repository of bento-starter demo as a Trusted Web Activity 👉 [https://github.com/kefranabg/bento-starter-twa](https://github.com/kefranabg/bento-starter-twa)
+
 ## Push notifications
 
 You can easily add push notifications to your bento project with [firebase cloud messaging](https://firebase.google.com/docs/cloud-messaging/)
