@@ -19,6 +19,8 @@ As this project is a template project and not a CLI, you have access to the enti
 
 :point_right: [https://bento-starter.firebaseapp.com](https://bento-starter.firebaseapp.com)
 
+Install the PWA demo from Google Play Store :point_right: [bento-starter Google Play Store](https://play.google.com/store/apps/details?id=com.bentostarter.bentostarterdemo)
+
 ![Bento starter demo](/assets/img/demo.gif)
 
 **bento-starter** comes with a small example of "products management" in the [products page](https://bento-starter.firebaseapp.com/login?redirectUrl=%2Fproducts)**(Authentication required)** to demonstrate how to manage your data with this stack.
