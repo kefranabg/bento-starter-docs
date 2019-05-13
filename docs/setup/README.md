@@ -28,7 +28,7 @@ We highly recommend to use [VSCode](https://code.visualstudio.com/) with the fol
 git clone https://github.com/kefranabg/bento-starter.git my-bento-project
 cd my-bento-project
 
-# Install dependencies and clean git repos
+# Install dependencies and clean git repository
 npm run setup
 
 cp .env.example .env.local
