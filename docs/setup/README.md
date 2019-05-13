@@ -25,13 +25,13 @@ We highly recommend to use [VSCode](https://code.visualstudio.com/) with the fol
 <br />
 
 ```
-git clone https://github.com/kefranabg/bento-starter.git
-cd bento-starter
-cp .env.example .env.local
-npm i
+git clone https://github.com/kefranabg/bento-starter.git my-bento-project
+cd my-bento-project
 
-# If you want the project to target an existing git remote repository URL :
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+# Install dependencies and clean git repository
+npm run setup
+
+cp .env.example .env.local
 ```
 
 ## Step 2 - Firebase configuration
