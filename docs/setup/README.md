@@ -30,8 +30,6 @@ cd my-bento-project
 
 # Install dependencies and clean git repository
 npm run setup
-
-cp .env.example .env.local
 ```
 
 ## Step 2 - Firebase configuration
