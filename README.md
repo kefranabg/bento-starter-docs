@@ -34,5 +34,6 @@ Contributions, issues and feature requests are welcome. Feel free to check [issu
 
 Please ⭐️ this repository if you like it.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
