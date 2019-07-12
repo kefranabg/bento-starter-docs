@@ -121,7 +121,7 @@ You can easily add push notifications to your bento project with [firebase cloud
 **Bento-starter** uses [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) for prerendering.
 If you don't know what prerendering is, you should read [this](https://github.com/chrisvfritz/prerender-spa-plugin#what-is-prerendering).
 
-The prerendering configuration is available in `vue-config/config.default.js` :
+The prerendering configuration is available in `vue-config/config.production.js` :
 
 ```js
 new PrerenderSPAPlugin({
