@@ -53,6 +53,11 @@ npx firebase login
 # Select the project you've just created and use "default" as alias
 npx firebase use --add
 
+# Push your changes
+git add .firebaserc src/firebase/init.js
+git commit -m 'Add firebase config'
+git push
+
 # Build the app and deploy
 npm run build
 npx firebase deploy
