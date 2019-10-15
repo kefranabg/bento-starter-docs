@@ -55,7 +55,7 @@ npx firebase use --add
 
 # Push your changes
 git add .firebaserc src/firebase/init.js
-git commit -m 'Add firebase config'
+git commit -m ':wrench: Add firebase config'
 git push
 
 # Build the app and deploy
