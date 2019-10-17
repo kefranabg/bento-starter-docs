@@ -53,7 +53,7 @@ npx firebase login
 # Select the project you've just created and use "default" as alias
 npx firebase use --add
 
-# Push your changes
+# Push your changes (optional)
 git add .firebaserc src/firebase/init.js
 git commit -m ':wrench: Add firebase config'
 git push
