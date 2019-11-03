@@ -45,9 +45,8 @@ npm run setup
 - Back to your bento-starter project, open a console and run :
 
 ```
-npm i -g npx
-
 # Login with the account you used to create the firebase project
+# (npx is shipped by default since npm 5.2.0)
 npx firebase login
 
 # Select the project you've just created and use "default" as alias
