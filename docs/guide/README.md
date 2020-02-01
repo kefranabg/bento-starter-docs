@@ -303,9 +303,9 @@ Deployment configuration can be found in `/firebase.json`.
 
 <br />
 
-Continuous integration/deployment is handled by [CircleCI](https://circleci.com/) (**[If you've enabled it](/setup/#step-3-optional-continuous-integration-deployment)**)
+Continuous integration/deployment is handled by [Github Actions](https://github.com/features/actions) (**[If you've enabled it](/setup/#step-3-optional-continuous-integration-deployment)**)
 
-CircleCI will process the following :
+Github Actons will process the following :
 
 - Check that all project files matches the prettier format : `npm run prettier:check`
 - Run the linter : `npm run lint`
@@ -313,16 +313,16 @@ CircleCI will process the following :
 - Run e2e tests : `npm run test:e2e:headless`
 - Build the project : `npm run build`
 - Check your js bundles sizes : `npm run bundlesize`
-- **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** : `npm run firebase:deploy:ci`
+- **Eventually** deploy the built project to firebase hosting only when you push commits to **master** : `npm run firebase:deploy:ci`
 
-![CircleCI workflow](/assets/img/ci-workflow.jpg)
+You should also know that each time a commit is pushed on a pull-request branch, it will trigger the CI workflow.
 
-**CircleCI** configuration is available in `.circleci/config.yml`.
+**Github Actons** configurations are available in `.github/workflows`.
 
 <br />
 
 ::: tip
-📘 Refer to [the CircleCI documentation](https://circleci.com/docs/) for more details.
+📘 Refer to [the Github Actions documentation](https://help.github.com/en/actions/automating-your-workflow-with-github-actions) for more details.
 :::
 
 ## Tests
