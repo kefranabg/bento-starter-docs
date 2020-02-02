@@ -4,7 +4,7 @@ sidebarDepth: 0
 
 # Welcome to bento-starter :wave:
 
-[![CircleCI](https://circleci.com/gh/kefranabg/bento-starter/tree/master.svg?style=svg&circle-token=f311e2320782a12321a769faa2ef1d3cdf5e1a10)](https://circleci.com/gh/kefranabg/bento-starter/tree/master)
+[![Deploy on production](https://github.com/kefranabg/bento-starter/workflows/Deploy%20on%20production/badge.svg)](https://github.com/tbetous/bento-starter/actions?query=workflow%3A%22Deploy+on+production%22)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/vuesion/vuesion/graphs/commit-activity)
 [![Dependencies](https://img.shields.io/david/kefranabg/bento-starter.svg)](https://david-dm.org/kefranabg/bento-starter)
@@ -50,7 +50,7 @@ Install the PWA demo from Google Play Store :point_right: [bento-starter Google 
 - :white_check_mark: [Cypress](https://www.cypress.io/) : e2e testing
 - :mag: [Vue head](https://github.com/ktquez/vue-head) : meta description per page
 - :page_facing_up: **[Optional]** [prerender spa plugin](https://github.com/chrisvfritz/prerender-spa-plugin) : pages prerendering
-- :green_heart: **[Optional]** [circleci](https://circleci.com/) : continuous integration/deployment
+- :green_heart: **[Optional]** [Github Actions](https://github.com/features/actions) : continuous integration/deployment
 - :package: **[Optional]** [bundlesize](https://github.com/siddharthkp/bundlesize) : control your javascript bundles sizes
 
 **App embedded features :**
