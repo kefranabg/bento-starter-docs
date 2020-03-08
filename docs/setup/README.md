@@ -2,7 +2,7 @@
 
 ::: warning Pre-requisites
 
-- node9.3.0+
+- node >=9.3.0 & <= 13.0.0
 - npm@5.5.0+
 
 We recommand to use the node LTS version
