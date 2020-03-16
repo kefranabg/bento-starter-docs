@@ -53,10 +53,9 @@ npx firebase login
 # Select the project you've just created and use "default" as alias
 npx firebase use --add
 
-# Push your changes (optional)
+# Commit your changes
 git add .firebaserc src/firebase/init.js
 git commit -m ':wrench: Add firebase config'
-git push
 
 # Build the app and deploy
 npm run build
@@ -69,12 +68,15 @@ npx firebase deploy
 
 However we recommend you to go through optional steps to get a better developer experience :sunglasses:
 
-## Step 3 (Optional) - Continuous integration/deployment
+If you want to disable the CI, go to `Your project page → Settings → Actions` and select ̀Disable Actions for this repository`.
 
-🕙Estimated time → **5 minutes**
+## Step 3 (optional) - Continuous integration/deployment
+
+🕙Estimated time → **3 minutes**
 <br />
 
-We've built a CircleCI configuration that will trigger the following actions when you're pushing to your github repository.
+We've built a Github Actions configuration that will trigger the following actions when you're pushing on master or make a pull-request.
+
 The process is the following :
 
 - Check that all project files matches the prettier format : `npm run prettier:check`
@@ -83,26 +85,13 @@ The process is the following :
 - Run e2e tests : `npm run test:e2e:headless`
 - Build the project : `npm run build`
 - Check your js bundles sizes : `npm run bundlesize`
-- **Eventually** deploy the built project to firebase hosting if the targeted branch is **master** : `npm run firebase:deploy:ci`
+- **Eventually** deploy the built project to firebase hosting only when you push commits to **master** : `npm run firebase:deploy:ci`
 
-![CircleCI workflow](/assets/img/ci-workflow.jpg)
+You should also know that each time a commit is pushed on a pull-request branch, it will trigger the CI workflow.
 
-⚠️ **For this step, we assume that you already have a github repository that hosts your bento-starter project with your source code pushed on the master branch** ⚠️
+⚠️ **For this step, we assume that you already have created a github repository that will host your bento-starter project** ⚠️
 
-Steps :
-
-- Go to [https://circleci.com](https://circleci.com)
-- Login with your github account
-- Authorize CircleCI to look into your github projects
-- Go to `Side menu → Add projects` and click the `Set Up Project` button corresponding to your **bento-starter** project
-- You might be asked for choosing an OS and a language. If so, choose `Linux` and `Node`.
-- You can directly start your first CircleCI build by clicking `Start building` button.
-- Go to `Side menu → Jobs` and you should see your first CircleCI job running
-- Now wait for all the jobs to finish
-
-The last job (`deploy`) will fail and this is normal :sweat_smile: It's because of the deployment step (`npm run firebase:deploy:ci`). We need to authorize circle ci to deploy on our firebase hosting project. For this we just need to add a firebase token to circle ci :
-
-- Back to a terminal run the following command :
+You need to configure Github Actions with your firebase credentials in order it can deploy your project. First of all you need to get a firebase token from your credentials :
 
 ```
 npx firebase login:ci
@@ -114,8 +103,27 @@ npx firebase login:ci
 1/PXcLCJ5BXAZ7ciFwkrrpikUbnMAMX8xRFmt16pLYudg9
 ```
 
-- Copy this token and in your CircleCI project interface, go to `Your CircleCI project settings → Environment Variables` and click `Add Variable` button.
-- For the env variable name, use `FIREBASE_TOKEN` and for the value, use the token you got from the `firebase login:ci` command.
-- Go to `Side menu → Jobs` click the job that fails and click the `Rerun workflow` button.
+Once you did that, you need to add this token in your Github project.
+
+- Go to `Your project page → Settings → Secrets`
+- Click on `Add a new secret`
+- Fill `Name` input with `x`
+- Copy the printed firebase token and paste into `Value` input
+- Click on `Add secret button`
+
+![Bento starter demo](/assets/img/secret-firebase.png)
+
+All you need to do is to push your project code into `master` with git.
+
+Back to a terminal, run the following command :
+
+```
+git push -u origin master
+```
+
+This will trigger Github actions workflow, check your code and deploy your project into Firebase. Go to `Your project page → Actions` to follow the Github actions workflow execution.
+
 - Wait again for all the jobs to finish.
 - Now the deploy step has completed with success and your project has automatically been deployed to firebase hosting :tada:
+
+![Bento starter demo](/assets/img/github-actions-workflow.png)
