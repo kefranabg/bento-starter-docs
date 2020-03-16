@@ -68,7 +68,7 @@ npx firebase deploy
 
 However we recommend you to go through optional steps to get a better developer experience :sunglasses:
 
-If you really don't want to us CI, you can disable it. Go to `Your project page → Settings → Actions` and select ̀`Disable Actions for this repository`.
+If you want to disable the CI, go to `Your project page → Settings → Actions` and select  ̀Disable Actions for this repository`.
 
 ## Step 3 (optional) - Continuous integration/deployment
 
