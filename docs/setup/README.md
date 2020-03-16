@@ -115,7 +115,7 @@ Once you did that, you need to add this token in your Github project.
 
 All you need to do is to push your project code into `master` with git.
 
-- Back to a terminal run the following command :
+Back to a terminal, run the following command :
 
 ```
 git push -u origin master
