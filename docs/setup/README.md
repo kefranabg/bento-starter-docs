@@ -77,9 +77,6 @@ If you want to disable the CI, go to `Your project page → Settings → Actions
 
 We've build a Github Actions and a CircleCI configuration. Github Actions will be great in order to start fast, however the project repository needs to be hosted by Github and be public (Github Actions with private repository needs to subscribe to a paid plan). CircleCI is a little bit complex to be set but will be less restrictive.
 
-- Github Actions
-- CircleCi
-
 #### Github Actions
 
 We've built a Github Actions configuration that will trigger the following actions when you're pushing on master or make a pull-request.
