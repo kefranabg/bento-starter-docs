@@ -107,7 +107,7 @@ Once you did that, you need to add this token in your Github project.
 
 - Go to `Your project page → Settings → Secrets`
 - Click on `Add a new secret`
-- Fill `Name` input with `x`
+- Fill `Name` input with `FIREBASE_TOKEN`
 - Copy the printed firebase token and paste into `Value` input
 - Click on `Add secret button`
 
