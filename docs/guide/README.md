@@ -303,9 +303,9 @@ Deployment configuration can be found in `/firebase.json`.
 
 <br />
 
-Continuous integration/deployment is handled by [Github Actions](https://github.com/features/actions) (**[If you've enabled it](/setup/#step-3-optional-continuous-integration-deployment)**)
+Continuous integration/deployment can be handled by [CircleCI](https://circleci.com/) or [Github Actions](https://github.com/features/actions) (**[If you've enabled it](/setup/#step-3-optional-continuous-integration-deployment)**)
 
-Github Actons will process the following :
+Both will process the following :
 
 - Check that all project files matches the prettier format : `npm run prettier:check`
 - Run the linter : `npm run lint`
@@ -315,7 +315,7 @@ Github Actons will process the following :
 - Check your js bundles sizes : `npm run bundlesize`
 - **Eventually** deploy the built project to firebase hosting only when you push commits to **master** : `npm run firebase:deploy:ci`
 
-You should also know that each time a commit is pushed on a pull-request branch, it will trigger the CI workflow.
+**CircleCI** configuration is available in `.circleci/config.yml`.
 
 **Github Actons** configurations are available in `.github/workflows`.
 
